@@ -18,6 +18,12 @@ const stationHub = {
 
     return foundStation;
   },
+  
+  removeReading(id, readingId) {
+    const station = this.getPlaylist(id);
+
+    // removes the reading from the station using the IDs
+  },
 };
 
 module.exports = stationHub;

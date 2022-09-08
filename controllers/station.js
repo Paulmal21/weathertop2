@@ -1,17 +1,25 @@
 'use strict';
 
 const logger = require('../utils/logger');
-const stationList = require('../models/station-hub.js');
+const stationHub = require('../models/station-hub');
 
 const station = {
   index(request, response) {
     const stationId = request.params.id;
-    logger.info('Station id = ', stationId);
+    logger.debug('Station id = ', stationId);
     const viewData = {
       title: 'Station',
       station: stationHub.getStation(stationId),
     };
     response.render('station', viewData);
+  },
+  
+  deleteReading(request, response) {
+    const stationId = request.params.id;
+    const readingId = request.params.readingid;
+    logger.debug(`Deleting Reading ${readingId} from Station ${stationId}`);
+    stationHub.removeReading(stationId, readingId);
+    response.redirect('/station/' + stationId);
   },
 };
 
