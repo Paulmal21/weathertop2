@@ -4,16 +4,29 @@
       <th>Code</th>
       <th>Temp</th>
       <th>Wind Speed</th>
-      <th>Temp</th>
-      <th>Temp</th>
+      <th>Wind Direction</th>
+      <th>Pressure</th>
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td>
-      </td>
-      <td>
-      </td>
-    </tr>
-  </tbody>
+    {{#each playlist.songs}}
+      <tr>
+        <td>
+          {{code}}
+        </td>
+        <td>
+          {{temp}}
+        </td>
+        <td>
+          {{windSpeed}}
+        </td>
+        <td>
+          {{temp}}
+        </td>
+        <td>
+          {{temp}}
+        </td>
+      </tr>
+    {{/each}}
+</tbody>
 </table>
