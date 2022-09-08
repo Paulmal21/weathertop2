@@ -1,5 +1,7 @@
 'use strict';
 
+const _ = require('lodash');
+
 const stationHub = {
 
   stationList: require('./station-hub.json').stationList,
@@ -9,18 +11,13 @@ const stationHub = {
   },
 
   getStation(id) {
-    let foundStation = null;
-    for (let station of this.stationList) {
-      if (id == station.id) {
-        foundStation = station;
-      }
-    }
-
-    return foundStation;
+    return _.find(this.stationList, { id: id });
   },
   
   removeReading(id, readingId) {
-    const station = this.getPlaylist(id);
+    const station = this.getStation(id);
+    
+    _.remove(station.readings, { id: readingId });
 
     // removes the reading from the station using the IDs
   },
