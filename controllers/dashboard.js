@@ -3,6 +3,8 @@
 const logger = require('../utils/logger');
 const stationHub = require('../models/station-hub');
 
+const uuid = require('uuid');
+
 const dashboard = {
   index(request, response) {
     logger.info('dashboard rendering');
@@ -18,6 +20,18 @@ const dashboard = {
     const stationId = request.params.id;
     logger.debug(`Deleting Station ${stationId}`);
     stationHub.removeStation(stationId);
+    response.redirect('/dashboard');
+  },
+  
+  addStation(request, response) {
+    const newStation = {
+      id: uuid.v1(),
+      location: request.body.location,
+      longitude: request.body.longitude,
+      latitude: request.body.latitude,
+      readings: [],
+    };
+    playlistStore.addPlaylist(newPlayList);
     response.redirect('/dashboard');
   },
 };
