@@ -4,40 +4,45 @@ const _ = require('lodash');
 const JsonStore = require('./json-store');
 
 const stationHub = {
-  
-  store: new JsonStore('./models/station-hub.json', { stationList: [] }),
+
+  store: new JsonStore('./models/station-store.json', { stationList: [] }),
   collection: 'stationList',
 
-
   getAllStations() {
-    return this.stationList;
+    return this.store.findAll(this.collection);
   },
 
   getStation(id) {
-    return _.find(this.stationList, { id: id });
+    return this.store.findOneBy(this.collection, { id: id });
   },
-  
-  removeReading(id, readingId) {
-    const station = this.getStation(id);
-    
-    _.remove(station.readings, { id: readingId });
 
-    // removes the reading from the station using the IDs
+  addStation(station) {
+    this.store.add(this.collection, station);
+    this.store.save();
   },
-  
+
   removeStation(id) {
-    _.remove(this.stationList, { id: id });
-    
-    // removes the station using its ID
+    const station = this.getStation(id);
+    this.store.remove(this.collection, station);
+    this.store.save();
   },
-  
+
+  removeAllStations() {
+    this.store.removeAll(this.collection);
+    this.store.save();
+  },
+
   addReading(id, reading) {
     const station = this.getStation(id);
     station.readings.push(reading);
+    this.store.save();
   },
-  
-  addStation(station) {
-    this.stationList.push(station);
+
+  removeReading(id, readingId) {
+    const station = this.getStation(id);
+    const readings = station.readings;
+    _.remove(readings, { id: readingId});
+    this.store.save();
   },
 };
 
