@@ -1,10 +1,13 @@
 'use strict';
 
 const _ = require('lodash');
+const JsonStore = require('./json-store');
 
 const stationHub = {
+  
+  store: new JsonStore('./models/station-hub.json', { stationList: [] }),
+  collection: 'stationList',
 
-  stationList: require('./station-hub.json').stationList,
 
   getAllStations() {
     return this.stationList;
