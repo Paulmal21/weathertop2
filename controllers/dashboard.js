@@ -31,7 +31,7 @@ const dashboard = {
       latitude: request.body.latitude,
       readings: [],
     };
-    playlistStore.addPlaylist(newPlayList);
+    stationHub.addStation(newStation);
     response.redirect('/dashboard');
   },
 };

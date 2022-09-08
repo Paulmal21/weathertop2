@@ -32,6 +32,10 @@ const stationHub = {
     const station = this.getStation(id);
     station.readings.push(reading);
   },
+  
+  addStation(station) {
+    this.stationList.push(station);
+  },
 };
 
 module.exports = stationHub;
