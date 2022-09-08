@@ -71,7 +71,7 @@
       "latitude": 400.12,
       "readings": [
         {
-          "id" : "07",
+          "id" : "10",
           "code": "100",
           "temp": "15",
           "windSpeed": "30",
@@ -79,22 +79,14 @@
           "pressure": "60"
         },
         {
-          "id" : "07",
+          "id" : "11",
           "code": "2100",
           "temp": "215",
           "windSpeed": "230",
           "windDirection": "2NW",
           "pressure": "260"
-        },
-        {
-          "id" : "07",
-          "code": "3100",
-          "temp": "315",
-          "windSpeed": "330",
-          "windDirection": "3NW",
-          "pressure": "360"
         }
       ]
-    },
+    }
   ]
 }
