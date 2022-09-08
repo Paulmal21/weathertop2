@@ -1,12 +1,12 @@
 'use strict';
 
 const logger = require('../utils/logger');
-const stationHub = require('../models/station-hub');
+const stationList = require('../models/station-hub.js');
 
 const station = {
   index(request, response) {
     const stationId = request.params.id;
-    logger.debug('Station id = ', stationId);
+    logger.info('Station id = ', stationId);
     const viewData = {
       title: 'Station',
       station: stationHub.getStation(stationId),

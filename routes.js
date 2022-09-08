@@ -1,12 +1,14 @@
 "use strict";
 
+const station = require('./controllers/station.js');
+
 const express = require("express");
 const router = express.Router();
 
 const dashboard = require("./controllers/dashboard.js");
 const about = require("./controllers/about.js");
 
-const station = require('./controllers/station.js');
+
 
 router.get("/", dashboard.index);
 router.get("/dashboard", dashboard.index);
