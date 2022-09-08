@@ -1,5 +1,23 @@
 'use strict';
 
-const stationList = require('./station-hub.json').stationList;
+const stationHub = {
 
-module.exports = stationList;
+  stationList: require('./station-hub.json').stationList,
+
+  getAllStations() {
+    return this.stationList;
+  },
+
+  getStation(id) {
+    let foundStation = null;
+    for (let station of this.stationList) {
+      if (id == station.id) {
+        foundStation = station;
+      }
+    }
+
+    return foundStation;
+  },
+};
+
+module.exports = stationHub;
