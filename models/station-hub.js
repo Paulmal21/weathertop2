@@ -21,6 +21,12 @@ const stationHub = {
 
     // removes the reading from the station using the IDs
   },
+  
+  removeStation(id) {
+    _.remove(this.stationList, { id: id });
+    
+    // removes the station using its ID
+  },
 };
 
 module.exports = stationHub;
