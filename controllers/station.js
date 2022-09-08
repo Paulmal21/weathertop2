@@ -21,6 +21,17 @@ const station = {
     stationHub.removeReading(stationId, readingId);
     response.redirect('/station/' + stationId);
   },
+  
+  addReading(request, response) {
+    const stationId = request.params.id;
+    const station = stationHub.getStation(stationId);
+    const newReading = {
+      code: request.body.code,
+      temp: request.body.temp,
+    };
+    playlistStore.addSong(playlistId, newSong);
+    response.redirect('/playlist/' + playlistId);
+  },
 };
 
 module.exports = station;
