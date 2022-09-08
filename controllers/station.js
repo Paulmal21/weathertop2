@@ -1,5 +1,7 @@
 'use strict';
 
+const uuid = require('uuid');
+
 const logger = require('../utils/logger');
 const stationHub = require('../models/station-hub');
 
@@ -26,6 +28,7 @@ const station = {
     const stationId = request.params.id;
     const station = stationHub.getStation(stationId);
     const newReading = {
+      id: uuid.v1(),
       code: request.body.code,
       temp: request.body.temp,
       windSpeed: request.body.windSpeed,

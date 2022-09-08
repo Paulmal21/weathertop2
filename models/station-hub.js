@@ -30,7 +30,7 @@ const stationHub = {
   
   addReading(id, reading) {
     const station = this.getStation(id);
-    station.reading.push(reading);
+    station.readings.push(reading);
   },
 };
 
