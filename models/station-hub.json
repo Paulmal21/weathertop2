@@ -40,15 +40,15 @@
           "code": "5100",
           "temp": "515",
           "windSpeed": "530",
-          "windDirection": "2NW",
-          "pressure": "260"
+          "windDirection": "5NW",
+          "pressure": "560"
         },
         {
-          "code": "3100",
-          "temp": "315",
-          "windSpeed": "330",
-          "windDirection": "3NW",
-          "pressure": "360"
+          "code": "6100",
+          "temp": "615",
+          "windSpeed": "630",
+          "windDirection": "6NW",
+          "pressure": "660"
         }
       ]
     }
