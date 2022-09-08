@@ -1,8 +1,41 @@
 {{> menu id="dashboard"}}
 
-<section class="ui segment">
-  <h2 class="ui header">
-    Dunmore Station
-  </h2>
-  {{> listreadings}}
-</section>
+{{#each stations}}
+  <section class="ui segment">
+    <h2 class="ui header">
+      {{location}}
+    </h2>
+    <table class="ui table">
+      <thead>
+        <tr>
+          <th>Code</th>
+          <th>Temp</th>
+          <th>Wind Speed</th>
+          <th>Wind Direction</th>
+          <th>Pressure</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each readings}}
+          <tr>
+            <td>
+              {{code}}
+            </td>
+            <td>
+              {{temp}}
+            </td>
+            <td>
+              {{windSpeed}}
+            </td>
+            <td>
+              {{windDirection}}
+            </td>
+            <td>
+              {{pressure}}
+            </td>
+          </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </section>
+{{/each}}

@@ -1,0 +1,56 @@
+{
+  "stationList": [
+    {
+      "location": "Tramore",
+      "readings": [
+        {
+          "code": "100",
+          "temp": "15",
+          "windSpeed": "30",
+          "windDirection": "NW",
+          "pressure": "60"
+        },
+        {
+          "code": "2100",
+          "temp": "215",
+          "windSpeed": "230",
+          "windDirection": "2NW",
+          "pressure": "260"
+        },
+        {
+          "code": "3100",
+          "temp": "315",
+          "windSpeed": "330",
+          "windDirection": "3NW",
+          "pressure": "360"
+        }
+      ]
+    },
+    {
+      "location": "Dunmore",
+      "readings": [
+        {
+          "code": "4100",
+          "temp": "415",
+          "windSpeed": "430",
+          "windDirection": "4NW",
+          "pressure": "460"
+        },
+        {
+          "code": "5100",
+          "temp": "515",
+          "windSpeed": "530",
+          "windDirection": "2NW",
+          "pressure": "260"
+        },
+        {
+          "code": "3100",
+          "temp": "315",
+          "windSpeed": "330",
+          "windDirection": "3NW",
+          "pressure": "360"
+        }
+      ]
+    }
+  ]
+}

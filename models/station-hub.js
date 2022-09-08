@@ -29,4 +29,33 @@ const tramore = {
   ],
 };
 
-module.exports = tramore;
+const dunmore = {
+  location: 'Dunmore',
+  readings: [
+    {
+      code: '22',
+      temp: '33',
+      windSpeed: '5',
+      windDirection: 'NW',
+      pressure: '60',
+    },
+    {
+      code: '22',
+      temp: '33',
+      windSpeed: '5',
+      windDirection: 'NW',
+      pressure: '60',
+    },
+    {
+      code: '22',
+      temp: '33',
+      windSpeed: '5',
+      windDirection: 'NW',
+      pressure: '60',
+    },
+  ],
+};
+
+const stationList = [tramore, dunmore];
+
+module.exports = stationList;
