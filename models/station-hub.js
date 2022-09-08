@@ -27,6 +27,11 @@ const stationHub = {
     
     // removes the station using its ID
   },
+  
+  addReading(id, reading) {
+    const station = this.getStation(id);
+    station.reading.push(reading);
+  },
 };
 
 module.exports = stationHub;

@@ -28,9 +28,12 @@ const station = {
     const newReading = {
       code: request.body.code,
       temp: request.body.temp,
+      windSpeed: request.body.windSpeed,
+      windDirection: request.body.windDirection,
+      pressure: request.body.pressure,
     };
-    playlistStore.addSong(playlistId, newSong);
-    response.redirect('/playlist/' + playlistId);
+    stationHub.addReading(stationId, newReading);
+    response.redirect('/station/' + stationId);
   },
 };
 
