@@ -9,7 +9,7 @@
     </tr>
   </thead>
   <tbody>
-    {{#each playlist.songs}}
+    {{#each station.readings}}
       <tr>
         <td>
           {{code}}
@@ -21,10 +21,10 @@
           {{windSpeed}}
         </td>
         <td>
-          {{temp}}
+          {{windDirection}}
         </td>
         <td>
-          {{temp}}
+          {{pressure}}
         </td>
       </tr>
     {{/each}}
