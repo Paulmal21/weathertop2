@@ -2,11 +2,14 @@
 
 const _ = require('lodash');
 const JsonStore = require('./json-store');
+const station = require("../controllers/station");
 
 const stationHub = {
 
   store: new JsonStore('./models/station-hub.json', { stationList: [] }),
   collection: 'stationList',
+
+
 
   getAllStations() {
     return this.store.findAll(this.collection);
@@ -62,7 +65,9 @@ const stationHub = {
     reading.windDirection = updatedReading.windDirection;
     reading.pressure = updatedReading.pressure;
     this.store.save();
-  }
+  },
+
+
 };
 
 module.exports = stationHub;

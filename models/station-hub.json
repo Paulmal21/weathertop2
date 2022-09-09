@@ -5,14 +5,48 @@
       "location": "Springfield",
       "longitude": "23",
       "latitude": "234",
-      "readings": []
+      "readings": [
+        {
+          "id": "d5922480-308d-11ed-97c7-dd9a75296667",
+          "code": "300",
+          "temp": "3",
+          "windSpeed": "3",
+          "windDirection": "0",
+          "pressure": "5"
+        }
+      ]
     },
     {
       "id": "a3f06120-3075-11ed-8147-5567d6bbfbb2",
       "location": "Longford",
       "longitude": "23",
       "latitude": "83",
-      "readings": []
+      "readings": [
+        {
+          "id": "921dff60-3080-11ed-97c7-dd9a75296667",
+          "code": "1",
+          "temp": "2",
+          "windSpeed": "3",
+          "windDirection": "4",
+          "pressure": "5"
+        },
+        {
+          "id": "9539e560-3080-11ed-97c7-dd9a75296667",
+          "code": "2",
+          "temp": "3",
+          "windSpeed": "4",
+          "windDirection": "5",
+          "pressure": "6"
+        },
+        {
+          "id": "c0d27ac0-3080-11ed-97c7-dd9a75296667",
+          "code": "2",
+          "temp": "3",
+          "windSpeed": "45",
+          "windDirection": "55",
+          "pressure": "66"
+        }
+      ]
     }
   ]
 }

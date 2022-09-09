@@ -38,6 +38,7 @@ const station = {
     stationHub.addReading(stationId, newReading);
     response.redirect('/station/' + stationId);
   },
+
 };
 
 module.exports = station;
