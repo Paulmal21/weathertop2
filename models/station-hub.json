@@ -8,11 +8,11 @@
       "readings": [
         {
           "id": "844bc9f0-305b-11ed-8c75-fd34ad777b68",
-          "code": "5",
-          "temp": "5",
-          "windSpeed": "5",
-          "windDirection": "5",
-          "pressure": "5"
+          "code": "6",
+          "temp": "6",
+          "windSpeed": "6",
+          "windDirection": "6",
+          "pressure": "6"
         }
       ]
     }
