@@ -5,7 +5,7 @@ const JsonStore = require('./json-store');
 
 const stationHub = {
 
-  store: new JsonStore('./models/station-store.json', { stationList: [] }),
+  store: new JsonStore('./models/station-hub.json', { stationList: [] }),
   collection: 'stationList',
 
   getAllStations() {
