@@ -1,4 +1,20 @@
 {
   "stationList": [
+    {
+      "id": "7d9f4320-305b-11ed-8c75-fd34ad777b68",
+      "location": "Springfield",
+      "longitude": "49",
+      "latitude": "83",
+      "readings": [
+        {
+          "id": "844bc9f0-305b-11ed-8c75-fd34ad777b68",
+          "code": "45",
+          "temp": "1",
+          "windSpeed": "2",
+          "windDirection": "3",
+          "pressure": "4"
+        }
+      ]
+    }
   ]
 }
