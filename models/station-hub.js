@@ -44,6 +44,10 @@ const stationHub = {
     _.remove(readings, { id: readingId});
     this.store.save();
   },
+  
+  getUserStations(userid) {
+    return this.store.findBy(this.collection, { userid: userid });
+  },
 };
 
 module.exports = stationHub;
