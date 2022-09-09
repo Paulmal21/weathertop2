@@ -1,20 +1,18 @@
 {
   "stationList": [
     {
-      "id": "7d9f4320-305b-11ed-8c75-fd34ad777b68",
+      "id": "9f1a9620-3075-11ed-8147-5567d6bbfbb2",
       "location": "Springfield",
-      "longitude": "49",
+      "longitude": "23",
+      "latitude": "234",
+      "readings": []
+    },
+    {
+      "id": "a3f06120-3075-11ed-8147-5567d6bbfbb2",
+      "location": "Longford",
+      "longitude": "23",
       "latitude": "83",
-      "readings": [
-        {
-          "id": "844bc9f0-305b-11ed-8c75-fd34ad777b68",
-          "code": "6",
-          "temp": "6",
-          "windSpeed": "6",
-          "windDirection": "6",
-          "pressure": "6"
-        }
-      ]
+      "readings": []
     }
   ]
 }

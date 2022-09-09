@@ -8,7 +8,7 @@ const stationHub = require('../models/station-hub');
 const station = {
   index(request, response) {
     const stationId = request.params.id;
-    logger.debug('Station id = ', stationId);
+    logger.debug('Station id = ', stationId);    
     const viewData = {
       title: 'Station',
       station: stationHub.getStation(stationId),
