@@ -43,8 +43,10 @@ const reading = {
     reading.windSpeed = latestReading.windSpeed;
     reading.windDirection = latestReading.windDirection;
     reading.pressure = latestReading.pressure;
-*/
-  }
+
+  },
+
+   */
 };
 
 module.exports = reading;
