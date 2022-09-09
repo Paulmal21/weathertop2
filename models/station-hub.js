@@ -52,7 +52,7 @@ const stationHub = {
   getReading(id, readingId) {
     const station = this.store.findOneBy(this.collection, { id: id });
     const reading = station.readings.filter(reading => reading.id == readingId);
-    return readings[0];
+    return reading[0];
   },
   
   updateReading(reading, updatedReading) {

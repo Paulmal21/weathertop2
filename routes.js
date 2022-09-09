@@ -10,6 +10,8 @@ const about = require("./controllers/about.js");
 
 const accounts = require('./controllers/accounts.js');
 
+const reading = require("./controllers/reading.js");
+
 
 router.get("/dashboard", dashboard.index);
 router.get("/about", about.index);
@@ -30,6 +32,9 @@ router.get('/signup', accounts.signup);
 router.get('/logout', accounts.logout);
 router.post('/register', accounts.register);
 router.post('/authenticate', accounts.authenticate);
+
+router.get("/reading/:id/editreading/:readingid", reading.index);
+router.post("/reading/:id/updatereading/:readingid", reading.update);
 
 
 module.exports = router;
