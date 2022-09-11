@@ -7,12 +7,60 @@
       "latitude": "234",
       "readings": [
         {
-          "id": "d5922480-308d-11ed-97c7-dd9a75296667",
-          "code": "300",
-          "temp": "3",
-          "windSpeed": "3",
-          "windDirection": "0",
+          "id": "609f5ce0-3143-11ed-be5f-6f1d96b23419",
+          "code": "800",
+          "temp": "999",
+          "windSpeed": "999",
+          "windDirection": "11",
+          "pressure": "11"
+        },
+        {
+          "id": "a9f90990-30f3-11ed-9f85-612926a130ce",
+          "code": "100",
+          "temp": "5",
+          "windSpeed": "5",
+          "windDirection": "1",
+          "pressure": "6"
+        },
+        {
+          "id": "bbad0150-30fd-11ed-9f85-612926a130ce",
+          "code": "100",
+          "temp": "0.4",
+          "windSpeed": "",
+          "windDirection": "",
+          "pressure": ""
+        },
+        {
+          "id": "cc248d00-30fd-11ed-9f85-612926a130ce",
+          "code": "100",
+          "temp": "",
+          "windSpeed": "4.5",
+          "windDirection": "",
+          "pressure": ""
+        },
+        {
+          "id": "2b2a9ee0-3133-11ed-94ba-c753e312dc2a",
+          "code": "600",
+          "temp": "999",
+          "windSpeed": "2",
+          "windDirection": "3",
+          "pressure": "4"
+        },
+        {
+          "id": "086224e0-3139-11ed-85b6-09047969956c",
+          "code": "100",
+          "temp": "11",
+          "windSpeed": "6",
+          "windDirection": "2",
           "pressure": "5"
+        },
+        {
+          "id": "44888180-3143-11ed-85b6-09047969956c",
+          "code": "100",
+          "temp": "",
+          "windSpeed": "",
+          "windDirection": "",
+          "pressure": ""
         }
       ]
     },
@@ -45,8 +93,39 @@
           "windSpeed": "45",
           "windDirection": "55",
           "pressure": "66"
+        },
+        {
+          "id": "8e527a60-312e-11ed-a52a-8d0ef9733a2f",
+          "code": "600",
+          "temp": "6",
+          "windSpeed": "5",
+          "windDirection": "3",
+          "pressure": "2"
         }
       ]
+    },
+    {
+      "id": "86800e00-312a-11ed-a52a-8d0ef9733a2f",
+      "location": "Longford 2",
+      "longitude": "2",
+      "latitude": "2",
+      "readings": [
+        {
+          "id": "8ea0be40-312a-11ed-a52a-8d0ef9733a2f",
+          "code": "100",
+          "temp": "2",
+          "windSpeed": "5",
+          "windDirection": "2",
+          "pressure": "5"
+        }
+      ]
+    },
+    {
+      "id": "d2d4ee20-312e-11ed-a52a-8d0ef9733a2f",
+      "location": "rissdfg",
+      "longitude": "66",
+      "latitude": "66",
+      "readings": []
     }
   ]
 }

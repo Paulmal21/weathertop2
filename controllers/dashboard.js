@@ -5,6 +5,7 @@ const stationHub = require('../models/station-hub');
 
 const uuid = require('uuid');
 
+
 const dashboard = {
   index(request, response) {
     logger.info('dashboard rendering');
@@ -15,6 +16,24 @@ const dashboard = {
     logger.info('about to render', stationHub.getAllStations());
     response.render('dashboard', viewData);
   },
+
+
+
+/*
+  const dashboard = {
+  index(request, response) {
+    logger.info("dashboard rendering");
+    const stations = stationStore.getAllStations();
+    for(const station of stations) {
+      station.latestReading=latestReading;
+    }
+    const viewData = {
+      title: "Station Dashboard",
+      stations: stations,
+    };
+
+ */
+
   
   deleteStation(request, response) {
     const stationId = request.params.id;
@@ -33,7 +52,7 @@ const dashboard = {
     };
     stationHub.addStation(newStation);
     response.redirect('/dashboard');
-  },
+  }
 };
 
 module.exports = dashboard;

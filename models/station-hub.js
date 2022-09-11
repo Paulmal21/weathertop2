@@ -35,9 +35,18 @@ const stationHub = {
     this.store.save();
   },
 
+  /*
   addReading(id, reading) {
     const station = this.getStation(id);
     station.readings.push(reading);
+    this.store.save();
+  },
+
+   */
+
+  addReading(id, reading) {
+    const station = this.getStation(id);
+    station.readings.unshift(reading);
     this.store.save();
   },
 

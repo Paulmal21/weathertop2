@@ -1,3 +1,4 @@
+<!--
 <table class="ui segment">
 
   <thead>
@@ -17,8 +18,153 @@
 
   </thead>
   <tbody>
+  {{#each station.readings}}
+    <tr>
+      <td>
+        {{latestReading.code}}
+      </td>
+      <td>
+        {{temp}}
+      </td>
+      <td>
+        {{windSpeed}}
+      </td>
+      <td>
+        {{windDirection}}
+      </td>
+      <td>
+        {{pressure}}
+      </td>
 
-
+    </tr>
+  {{/each}}
   </tbody>
 
-</table>
+</table> -->
+
+<section class="ui segment">
+
+
+  <div class="ui equal width padded grid container">
+
+    <div class="white column">
+      <div class="row">
+        <div class="rowTitle">
+          <h2 class><font size="4">
+            {{station.location}}<br></font></h2>
+          <div class="row">
+            <div class="row1">
+              Lat: {{station.latitude}}<br>
+            </div>
+            <div class="row2">
+              Long: {{station.longitude}}<br>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="one wide white column">
+      <h2 class>
+        <i class="map marked alternate large purple icon"></i></h2>
+    </div>
+
+
+    <div class="black column">
+      <div class="row">
+        <div class="rowTitle">
+          <h2 class><font size="4">
+            Weather <br></font></h2>
+          <div class="row">
+            <div class="row1">
+              {{station.readings.[0].code}}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--${latestReading.code}-->
+
+    </div>
+
+    <div class="one wide black column">
+      <h2 class>
+        image
+
+        <br></h2>
+    </div>
+
+
+    <div class="one wide white column"></div>
+
+
+    <div class="black column">
+      <div class="row">
+        <div class="rowTitle">
+          <h2 class><font size="3">
+            Temperature <br></font></h2>
+          {{station.readings.[0].temp}}
+
+          <div class="row">
+            <div class="col align-self-center">
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="one wide black column">
+      <h2 class>
+        <i class="temperature low large blue icon"></i> <br></h2>
+
+        <!--Test:{{station.readings.[readings.length-1].temp}}-->
+          </div>
+
+    <div class="one wide white column"></div>
+
+    <div class="black column">
+      <div class="row">
+        <div class="rowTitle">
+          <h2 class><font size="4">
+            Wind <br></font></h2>
+          <div class="row">
+            <div class="row1">
+              {{station.readings.[0].windSpeed}} <br>
+              {{station.readings.[0].windDirection}} <br>
+               <br>
+              Feels like  C
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="one wide black column">
+      <h2 class>
+        <i class="wind large green icon"></i></h2>
+    </div>
+
+    <div class="one wide white column"></div>
+
+    <div class="black column">
+      <div class="row">
+        <div class="rowTitle">
+          <h2 class><font size="4">
+            Pressure <br></font></h2>
+          <div class="row">
+            <div class="row1">
+              {{station.readings.[0].pressure}} hpa
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="one wide black column">
+      <h2 class>
+        <i class="tachometer alternate large orange icon"></i></h2>
+    </div>
+  </div>
+</section>

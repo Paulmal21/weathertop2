@@ -14,6 +14,7 @@ const reading = {
       station: stationHub.getStation(stationId),
       reading: stationHub.getReading(stationId, readingId)
     };
+
     response.render("reading", viewData);
   },
 
@@ -33,20 +34,9 @@ const reading = {
     response.redirect("/station/" + stationId);
   },
 
-  /*
-  latestReading(reading, latestReading) {
-    if (station.collection.size() > 0) {
-      latestReading = station.collection.get(station.collection.size() - 1);
-    }
-    reading.code = latestReading.code;
-    reading.temp = latestReading.temp;
-    reading.windSpeed = latestReading.windSpeed;
-    reading.windDirection = latestReading.windDirection;
-    reading.pressure = latestReading.pressure;
 
-  },
-
-   */
 };
+
+
 
 module.exports = reading;

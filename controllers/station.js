@@ -5,6 +5,9 @@ const uuid = require('uuid');
 const logger = require('../utils/logger');
 const stationHub = require('../models/station-hub');
 
+
+
+
 const station = {
   index(request, response) {
     const stationId = request.params.id;
@@ -23,7 +26,8 @@ const station = {
     stationHub.removeReading(stationId, readingId);
     response.redirect('/station/' + stationId);
   },
-  
+
+
   addReading(request, response) {
     const stationId = request.params.id;
     const station = stationHub.getStation(stationId);
@@ -35,9 +39,14 @@ const station = {
       windDirection: request.body.windDirection,
       pressure: request.body.pressure,
     };
+
     stationHub.addReading(stationId, newReading);
     response.redirect('/station/' + stationId);
+
   },
+
+
+
 
 };
 
