@@ -5,11 +5,8 @@ const JsonStore = require('./json-store');
 const station = require("../controllers/station");
 
 const stationHub = {
-
   store: new JsonStore('./models/station-hub.json', { stationList: [] }),
   collection: 'stationList',
-
-
 
   getAllStations() {
     return this.store.findAll(this.collection);
@@ -35,14 +32,6 @@ const stationHub = {
     this.store.save();
   },
 
-  /*
-  addReading(id, reading) {
-    const station = this.getStation(id);
-    station.readings.push(reading);
-    this.store.save();
-  },
-
-   */
 
   addReading(id, reading) {
     const station = this.getStation(id);
@@ -70,11 +59,13 @@ const stationHub = {
   updateReading(reading, updatedReading) {
     reading.code = updatedReading.code;
     reading.temp = updatedReading.temp;
+    reading.fahrenheit = (parseInt(updatedReading.temp)*(9 / 5)) + 32;
     reading.windSpeed = updatedReading.windSpeed;
     reading.windDirection = updatedReading.windDirection;
     reading.pressure = updatedReading.pressure;
     this.store.save();
   },
+
 
 
 };

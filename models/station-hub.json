@@ -1,131 +1,52 @@
 {
   "stationList": [
     {
-      "id": "9f1a9620-3075-11ed-8147-5567d6bbfbb2",
-      "location": "Springfield",
-      "longitude": "23",
-      "latitude": "234",
+      "id": "e496f820-3213-11ed-9bc8-25d1bf4dd0b1",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "location": "Tramore",
+      "longitude": "-7.152",
+      "latitude": "56.162",
       "readings": [
         {
-          "id": "609f5ce0-3143-11ed-be5f-6f1d96b23419",
-          "code": "800",
-          "temp": "999",
-          "windSpeed": "999",
-          "windDirection": "11",
-          "pressure": "11"
-        },
-        {
-          "id": "a9f90990-30f3-11ed-9f85-612926a130ce",
-          "code": "100",
-          "temp": "5",
-          "windSpeed": "5",
-          "windDirection": "1",
-          "pressure": "6"
-        },
-        {
-          "id": "bbad0150-30fd-11ed-9f85-612926a130ce",
-          "code": "100",
-          "temp": "0.4",
-          "windSpeed": "",
-          "windDirection": "",
-          "pressure": ""
-        },
-        {
-          "id": "cc248d00-30fd-11ed-9f85-612926a130ce",
-          "code": "100",
-          "temp": "",
-          "windSpeed": "4.5",
-          "windDirection": "",
-          "pressure": ""
-        },
-        {
-          "id": "2b2a9ee0-3133-11ed-94ba-c753e312dc2a",
+          "id": "0ea013e0-3214-11ed-9bc8-25d1bf4dd0b1",
           "code": "600",
-          "temp": "999",
+          "temp": "6.0",
+          "fahrenheit": 42.8,
           "windSpeed": "2",
-          "windDirection": "3",
-          "pressure": "4"
+          "windDirection": "200",
+          "chill": 6.803471341592671,
+          "pressure": "1004"
         },
         {
-          "id": "086224e0-3139-11ed-85b6-09047969956c",
-          "code": "100",
-          "temp": "11",
-          "windSpeed": "6",
-          "windDirection": "2",
-          "pressure": "5"
-        },
-        {
-          "id": "44888180-3143-11ed-85b6-09047969956c",
-          "code": "100",
-          "temp": "",
-          "windSpeed": "",
-          "windDirection": "",
-          "pressure": ""
+          "id": "f9df93e0-3213-11ed-9bc8-25d1bf4dd0b1",
+          "code": "800",
+          "temp": "0.5",
+          "fahrenheit": 32,
+          "windSpeed": "3.5",
+          "windDirection": "220",
+          "chill": -0.19276055612235873,
+          "pressure": "1001"
         }
       ]
     },
     {
-      "id": "a3f06120-3075-11ed-8147-5567d6bbfbb2",
-      "location": "Longford",
-      "longitude": "23",
-      "latitude": "83",
+      "id": "24c505e0-3214-11ed-9bc8-25d1bf4dd0b1",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "location": "Dunmore",
+      "longitude": "-6.98",
+      "latitude": "52.14",
       "readings": [
         {
-          "id": "921dff60-3080-11ed-97c7-dd9a75296667",
-          "code": "1",
-          "temp": "2",
-          "windSpeed": "3",
-          "windDirection": "4",
-          "pressure": "5"
-        },
-        {
-          "id": "9539e560-3080-11ed-97c7-dd9a75296667",
-          "code": "2",
-          "temp": "3",
-          "windSpeed": "4",
-          "windDirection": "5",
-          "pressure": "6"
-        },
-        {
-          "id": "c0d27ac0-3080-11ed-97c7-dd9a75296667",
-          "code": "2",
-          "temp": "3",
-          "windSpeed": "45",
-          "windDirection": "55",
-          "pressure": "66"
-        },
-        {
-          "id": "8e527a60-312e-11ed-a52a-8d0ef9733a2f",
-          "code": "600",
-          "temp": "6",
-          "windSpeed": "5",
-          "windDirection": "3",
-          "pressure": "2"
+          "id": "3d4992c0-3214-11ed-9bc8-25d1bf4dd0b1",
+          "code": "200",
+          "temp": "0.5",
+          "fahrenheit": 32,
+          "windSpeed": "3.5",
+          "windDirection": "120",
+          "chill": -0.19276055612235873,
+          "pressure": "999"
         }
       ]
-    },
-    {
-      "id": "86800e00-312a-11ed-a52a-8d0ef9733a2f",
-      "location": "Longford 2",
-      "longitude": "2",
-      "latitude": "2",
-      "readings": [
-        {
-          "id": "8ea0be40-312a-11ed-a52a-8d0ef9733a2f",
-          "code": "100",
-          "temp": "2",
-          "windSpeed": "5",
-          "windDirection": "2",
-          "pressure": "5"
-        }
-      ]
-    },
-    {
-      "id": "d2d4ee20-312e-11ed-a52a-8d0ef9733a2f",
-      "location": "rissdfg",
-      "longitude": "66",
-      "latitude": "66",
-      "readings": []
     }
   ]
 }

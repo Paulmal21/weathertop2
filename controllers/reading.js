@@ -2,7 +2,7 @@
 
 const logger = require("../utils/logger");
 const stationHub = require("../models/station-hub");
-const station = require("./station");
+
 
 const reading = {
   index(request, response) {
@@ -14,7 +14,6 @@ const reading = {
       station: stationHub.getStation(stationId),
       reading: stationHub.getReading(stationId, readingId)
     };
-
     response.render("reading", viewData);
   },
 
@@ -33,10 +32,6 @@ const reading = {
     stationHub.updateReading(reading, newReading);
     response.redirect("/station/" + stationId);
   },
-
-
 };
-
-
 
 module.exports = reading;
